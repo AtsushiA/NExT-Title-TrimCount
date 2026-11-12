@@ -86,9 +86,10 @@ jobs:
         run: |
           npx wp-env run cli wp plugin install plugin-check --activate
       - name: Run plugin check
-        # CI では GitHub がリポジトリ名で checkout するため小文字のスラグを使用
+        # wp-env はプラグインをチェックアウト先ディレクトリ名（= リポジトリ名）でマウントする。
+        # Plugin Check 2.2.0 以降はスラッグを厳密に照合するため、実際のディレクトリ名を渡す。
         run: |
-          npx wp-env run cli wp plugin check next-title-trim-count \
+          npx wp-env run cli wp plugin check "$(basename "$PWD")" \
             --ignore-warnings \
             --categories=general,performance,accessibility,security \
             --exclude-directories=vendor,tests,node_modules
