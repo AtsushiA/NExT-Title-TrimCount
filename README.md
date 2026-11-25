@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/AtsushiA/next-title-trim-count/actions/workflows/ci.yml/badge.svg)](https://github.com/AtsushiA/next-title-trim-count/actions/workflows/ci.yml)
 [![Latest Release](https://img.shields.io/github/v/release/AtsushiA/next-title-trim-count)](https://github.com/AtsushiA/next-title-trim-count/releases/latest)
+[![Try in WordPress Playground](https://img.shields.io/badge/Try%20in-WordPress%20Playground-3858e9?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/AtsushiA/NExT-Title-TrimCount/main/blueprint.json)
 
 タイトル・見出しブロックに**文字数**または**行数**で制限を追加する WordPress プラグイン。制限を超えた部分はフロントエンドで「…」に省略表示されます。
 
